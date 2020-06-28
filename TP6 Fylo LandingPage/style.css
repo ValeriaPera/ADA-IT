@@ -1,0 +1,160 @@
+:root {
+    --DarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+    --BrightBlue: hsl(224, 93%, 58%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+    --LightGrayBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+body {
+    color: var(--DarkBlue);
+    width: 100vw;    
+}
+.dosColumnas {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0;
+    padding: 40px;
+}
+.columnaIzquierda, .columnaDerecha {
+    width: 50vw;
+    align-items: center;
+}
+.columnaIzquierda h1 {
+    font-size: 2em;
+    color: var(--DarkBlue);
+    margin: 20px 0;
+    line-height: 40px;
+}
+.columnaIzquierda p {
+    line-height: 25px;
+    margin: 20px 0;
+    font-size: 1em;
+    padding-right: 30%;
+}
+.columnaDerecha img {
+    height: 60vh;
+}
+.links-header {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.links-header a {
+    padding: 0  20px;
+    text-decoration: none;
+    color: var(--DarkBlue);
+}
+.inputText{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid var(--DesaturatedBlue);
+    margin-right: 15px;
+}
+input::placeholder {
+    color: var(--LightGray);
+}
+.inputSubmit {
+    width: 30%;
+    padding: 1em 20px;
+    background-color: var(--BrightBlue);
+    border:1px solid var(--BrightBlue);
+    color: var(--LightGrayBlue);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.form-section1 {
+    display: flex;
+}
+.section2 {
+    background-color: hsl(261, 46%, 98%);
+    margin: 0;
+    position: relative;
+    top: -4px;
+}
+.imagenCurva {
+    width: 100%;
+}
+.link-section2 a {
+    color: var(--ModerateCyan);
+}
+.testimonio {
+    border: none;
+    background-color: white;
+    width: 23vw;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 3px 3px 5px 10px var(--LightGrayBlue);
+    border-radius: 5px;
+}
+.testimonio .texto-testimonio {
+    font-size: 10px;
+    font-weight: 700;
+}
+.persona-testimonio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imagen-testimonio {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    justify-content: flex-start;
+}
+.nombre-testimonio {
+    font-size: 10px;
+    font-weight: 700;
+}
+.puesto-testimonio {
+    font-size: 8px;
+    line-height: 1%;
+    margin: 1em auto;
+}
+.nombreypuesto {
+    margin-left: 10px;
+}
+.section3 {
+    background-color: var(--DesaturatedBlue);
+    color: var(--LightGrayBlue);
+    margin: 0;
+}
+.inputtextmod {
+    border-radius: 5px;
+    width: 70%;
+    margin: 2rem 2rem 1rem 0;
+    box-shadow: 2px 2px 5px hsl(239, 27%, 34%);
+}
+.form-section3 {
+    display: flex;
+    flex-direction: column;
+}
+.inputsubmitmod {
+    box-shadow: 2px 2px 5px hsl(239, 27%, 34%);
+}
+.contenedor-section4 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    line-height: 3em;
+    color: var(--LightGrayBlue);
+    
+}
+.section4 {
+    background-color: var(--DarkBlue);
+    padding: 2em;
+}
+i {
+    border: 1px solid var(--LightGrayBlue);
+    padding: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    width: 48px;
+}

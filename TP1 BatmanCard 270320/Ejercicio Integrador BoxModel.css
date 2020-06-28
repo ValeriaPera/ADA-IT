@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+body {
+    font-family: Roboto;
+    color:#e7e7e7;
+    }
+.card {
+    margin: 0 auto;
+    background-color:#1e1b26;
+    width: 375px;    
+    box-shadow:-2px 3px 8px 3px grey ;
+    border-radius:15px;
+}
+.card-text {
+    padding: 10px 20px 20px 20px;
+}
+h1, h4 {
+ font-family: Montserrat;
+ font-weight:lighter;
+}
+h1,h5{
+    margin:0mm;
+}
+h5 {
+    font-weight: bolder;
+}
+.textogris {
+    color: #9b9b9b;
+}
+.reparto {
+    font-style: italic;
+}
+.card-button {
+    width: 150px;
+    border:1px solid rgba(248, 77, 77, 0.87);
+    border-radius: 3px;
+    padding: 4px;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(248, 77, 77, 0.87);
+}
+.imagenButton {
+    height: 10px;
+    width: 10px;
+}

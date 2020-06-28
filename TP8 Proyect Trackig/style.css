@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap');
+
+:root {
+   --red: hsl(0, 100%, 68%);
+   --veryDarkBlue: hsl(230, 29%, 20%);
+   --darkGrayishBlue: hsl(230, 11%, 40%);
+   --grayishBlue: hsl(231, 7%, 65%);
+   --lightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-size: 14px;   
+    
+}
+.container {   
+    overflow-x: hidden;
+    padding: 5% 10%;
+}
+body::after {
+    width: 50vw;
+    height: 75vh;
+    content: " ";
+    background-color:var(--lightGrayishBlue);
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -10;
+    border-bottom-left-radius:100px ;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav {
+    display: none;
+}
+.main_img {
+    width: 172%;
+}
+.resaltado {
+    background-color: var(--veryDarkBlue);
+    color: white;
+    padding:0.2rem 0.5rem;
+    border-radius: 1em;
+}
+.gris {
+    margin-left: 1em;
+    color: var(--grayishBlue);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    
+ }
+ .main_text {
+     padding-top: 3rem;
+ }
+.main_title {
+    text-transform: uppercase;
+    margin:1.5rem 0;
+    color: var(--veryDarkBlue);
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.main_description {
+    font-family:"Barlow";
+    color: var(--darkGrayishBlue);
+}
+
+.main_action {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+.action_btn {
+    padding:0.7rem 1.5rem;
+    border-radius: 0.2em;
+    border: none;
+    background-color:var(--red);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed";  
+} 
+@media screen and (min-width:480px) {
+    * {
+        font-size: 18px;
+    }
+
+    .header_nav {
+        display: flex;
+    }
+    .header_logohambur {
+        display: none;
+    }
+    .header_nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    .header_nav_link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-left:2rem;
+    }
+    .header_nav_link:last-child {
+        color: var(--grayishBlue);
+    }
+    .header_nav_link:nth-child(-n+3) {
+        color: var(--veryDarkBlue);
+    }
+
+    i {
+        color: var(--grayishBlue);
+        font-size: 5px;
+        padding-left:2rem;
+        
+    }
+    .header_nav_link-gray {
+        color: var(--grayishBlue);
+    }
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .main_imgcontainer {
+        width: 50%;
+    }
+    .main_text {
+        width: 50%;
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_title {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .main_description {
+        font-size: 1em;
+    }
+    .main_action {
+        margin-top: 4rem;
+    }
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+}

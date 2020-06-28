@@ -1,0 +1,38 @@
+a {
+    color:#D99F6C;
+}
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #dfdede;
+    text-align: center;
+}
+body {
+    background-color: black;
+}
+h1 {
+    font-size: 24px;
+}
+#textoprincipal {
+    color:#63A687 ;
+    font-size: 16px;
+}
+.textoPrincipalDelFinal {
+    font-style: italic;
+    background-color:pink;  color:black;
+; 
+}
+h2 {
+    color:#D99F6C;         font-weight: bold;
+    font-size: 16px;
+}
+#tecnologia, #book, #inside, #textoAutores {
+    color: #F2B3BF;
+/* se puede usar div en vez de cada id ya que cada seccion se separa en div */
+}
+
+.nombreAutores {
+    color:black ;
+    background-color:#F2B3BF;
+    font-style: italic;
+}

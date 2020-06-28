@@ -1,0 +1,17 @@
+.btn {
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-family: $font-family-open-sans;
+  box-shadow: 1px 1px 5px rgba(143, 143, 143, 1);
+
+  &--grey {
+    background-color: $white;
+  }
+  &--pink {
+    background-color: $bg-color-pink;
+    color: $white;
+  }
+}

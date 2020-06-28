@@ -1,0 +1,47 @@
+.form {
+    width: 90%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+
+    &__text {
+        font-style: italic;
+        color: $middle-grey;
+        margin: 1rem 0;
+    }
+
+    &__textarea-desktop {
+        display: none;
+
+        @media screen and (min-width:680px) {
+            display: block;
+        }
+    }
+    
+    &__textarea-mobile {
+        display: block;
+
+        @media screen and (min-width:680px) {
+            display: none;
+        }
+    }  
+
+    &__item{
+        margin-bottom: 2rem;
+
+        --checkbox {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__label {
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        padding: .5rem 6rem;;
+    }
+}
+
+
+

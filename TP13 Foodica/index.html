@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>TP13 Foodica</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="imagenes/logo.png" alt="" /></div>
+    <!-- la navbar va a ir con un border arriba y abajo -->
+    <nav class="navbar">
+      <div class="navbar__items">
+        <ul>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>HOME<i class="fas fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>RECIPES <i class="fas fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>ABOUT
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            THEME FEATURES<i class="fas fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>SHOP
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>CONTACT
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart">0 ITEMS
+                -$0.00</i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__search"><i class="fas fa-search"></i></div>
+    </nav>
+    <!-- chiari lo hace con css por ahi -->
+    <div id="slide">
+      <ul>
+        <li>
+          <input type="radio" id="boton-1" name="in" />
+          <label for="boton-1"></label>
+          <img src="imagenes/hero-img1.jpg" width="100%" id="foto01" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
+            incidunt.
+          </p>
+        </li>
+
+        <li>
+          <input type="radio" id="boton-2" name="in" />
+          <label for="boton-2"></label>
+          <img src="imagenes/hero-img2.jpg" width="100%" id="foto02" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
+            incidunt.
+          </p>
+        </li>
+
+        <li>
+          <input type="radio" id="boton-3" name="in" />
+          <label for="boton-3"></label>
+          <img src="imagenes/hero-img3.jpg" width="100%" id="foto03" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
+            incidunt.
+          </p>
+        </li>
+
+        <li>
+          <input type="radio" id="boton-4" name="in" />
+          <label for="boton-4"></label>
+          <img src="imagenes/hero-img4.jpg" width="100%" id="foto04" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
+            incidunt.
+          </p>
+        </li>
+
+        <li>
+          <input type="radio" id="boton-5" name="in" />
+          <label for="boton-5"></label>
+          <img src="imagenes/hero-img5.jpg" width="100%" id="foto05" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
+            incidunt.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <!-- En el widget la imagen va como fondo -->
+    <div class="widget">
+      <div class="widget__about-me">
+        <button class="btn btn--widget">ABOUT ME</button>
+      </div>
+      <div class="widget__follow-me">
+        <button class="btn btn--widget">FOLLOW ME @INSTAGRAM</button>
+      </div>
+      <div class="widget__visit-shop">
+        <button class="btn btn--widget">VISIT THE SHOP</button>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main>
+      <article>
+        <h2 class="title">LATEST POST</h2>
+        <div class="card card--last-post">
+          <div class="card__img">
+            <img src="imagenes/Rustic Pavlova Cake.jpg" alt="" />
+          </div>
+          <div class="card__info">
+            <p class="card__category">DESSERTS</p>
+            <h1 class="card__title">Rustic Pavlova Cake</h1>
+            <small class="card__subtitle">October 3, 2014 •<span class="card__subtitle--dark">2 comments</span></small>
+            <p class="card__text">
+              This is some dummy copy. You’re not really supposed to read this
+              dummy copy, it is just a place holder for people who need some
+              type to visualize what the actual copy might look like if it were
+              real content. If you want to read, […]
+            </p>
+            <button class="btn btn--card">CONTINUE READING</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="imagenes/Sample Post with Blocks.jpg" alt="" />
+          </div>
+          <div class="card__info">
+            <p class="card__category">DIFFERENT</p>
+            <h1 class="card__title">
+              Sample Post with Blocks (Gutenberg Editor)
+            </h1>
+            <small class="card__subtitle">October 31, 2018 •<span class="card__subtitle--dark">0 comments</span></small>
+            <p class="card__text">
+              This is some dummy copy. You’re not really supposed to read this
+              dummy copy, it is just a place holder for people who need some
+              type to visualize what the actual copy might look like if it were
+              real content. If you want to read, […]
+            </p>
+            <button class="btn btn--card">CONTINUE READING</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="imagenes/Berry Crumble with Fresh Berries.jpg" alt="" />
+          </div>
+          <div class="card__info">
+            <p class="card__category">DESSERTS</p>
+            <h1 class="card__title">Berry Crumble with Fresh Berries</h1>
+            <small class="card__subtitle">December 10, 2015 •<span class="card__subtitle--dark">0
+                comments</span></small>
+            <p class="card__text">
+              This is some dummy copy. You’re not really supposed to read this
+              dummy copy, it is just a place holder for people who need some
+              type to visualize what the actual copy might look like if it were
+              real content. If you want to read, […]
+            </p>
+            <button class="btn btn--card">CONTINUE READING</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="imagenes/Sliced Bread Ciabatta and Oil.jpg" alt="" />
+          </div>
+          <div class="card__info">
+            <p class="card__category">APPETIZERS</p>
+            <h1 class="card__title">Sliced Bread Ciabatta and Oil</h1>
+            <small class="card__subtitle">August 26, 2015 •<span class="card__subtitle--dark">2 comments</span></small>
+            <p class="card__text">
+              This is some dummy copy. You’re not really supposed to read this
+              dummy copy, it is just a place holder for people who need some
+              type to visualize what the actual copy might look like if it were
+              real content. If you want to read, […]
+            </p>
+            <button class="btn btn--card">CONTINUE READING</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="imagenes/Salad with Arugula & Cherry.jpg" alt="" />
+          </div>
+          <div class="card__info">
+            <p class="card__category">SALADS</p>
+            <h1 class="card__title">
+              Salad with Arugula & Cherry Tomatoes (WP Recipe Maker Demo)
+            </h1>
+            <small class="card__subtitle">March 10, 2015 •<span class="card__subtitle--dark">2 comments</span></small>
+            <p class="card__text">
+              This is some dummy copy. You’re not really supposed to read this
+              dummy copy, it is just a place holder for people who need some
+              type to visualize what the actual copy might look like if it were
+              real content. If you want to read, […]
+            </p>
+            <button class="btn btn--card">CONTINUE READING</button>
+          </div>
+        </div>
+        <div class="paginado">
+          <div class="paginado__nros">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+          </div>
+          <div class="paginado--sig"><button>NEXT</button></div>
+        </div>
+      </article>
+      <article class="preview-desserts">
+        <h2 class="title">DESSERTS</h2>
+        <!--  reveer mas tarde -->
+        <div class="card-container">
+          <div class="card card--preview-desserts">
+            <div class="card--preview-dessert__img">
+              <img src="imagenes/Berry Crumble with Fresh Berries.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">December 10, 2015</small>
+            <h1 class="card__title--preview">
+              Berry crumble with fresh berries
+            </h1>
+          </div>
+          <div class="card card--preview-desserts">
+            <div class="card--preview-dessert__img">
+              <img src="imagenes/Pistachio Pavlova Cake.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">October 11, 2015</small>
+            <h1 class="card__title--preview">
+              Pistachio Plavlova Meringue Cakes
+            </h1>
+          </div>
+          <div class="card card--preview-desserts">
+            <div class="card--preview-dessert__img">
+              <img src="imagenes/Rustic Pavlova Cake.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">March 10, 2015</small>
+            <h1 class="card__title--preview">
+              Rustic Plavlova cake
+            </h1>
+          </div>
+          <div class="card card--preview-desserts">
+            <div class="card--preview-dessert__img">
+              <img src="imagenes/Cinnamon & Orange Cookies.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">September 21, 2015</small>
+            <h1 class="card__title--preview">
+              Cinnamon & Oranges Jam Linzer Cookies
+            </h1>
+          </div>
+          <button class="btn btn--card">view more in desserts...</button>
+        </div>
+      </article>
+      <!-- Aca empieza preview appetizers -->
+
+      <article class="preview-appetizers">
+        <h2 class="title">APPETIZERS</h2>
+        <div class="card-container">
+          <div class="card card--preview-appetizers">
+            <div class="card--preview-appetizers__img">
+              <img src="imagenes/Ham Salad with Poached Egg.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">December 10, 2015</small>
+            <h1 class="card__title--preview">
+              Ham Salad with Poached egg
+            </h1>
+          </div>
+          <div class="card card--preview-appetizers">
+            <div class="card--preview-appetizers__img">
+              <img src="imagenes/Sliced Bread Ciabatta and Oil.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">March 10, 2015</small>
+            <h1 class="card__title--preview">
+              Sliced Bread Ciabatta and Oil
+            </h1>
+          </div>
+          <div class="card card--preview-appetizers">
+            <div class="card--preview-appetizers__img">
+              <img src="imagenes/Fried Eggs with Tomatoes.jpg" alt="" />
+            </div>
+            <small class="card__subtitle">September 21, 2015</small>
+            <h1 class="card__title--preview">
+              Fried Eggs with Tomatoes
+            </h1>
+          </div>
+          <button class="btn btn--card">VIEW MORE IN APPETIZERS</button>
+        </div>
+      </article>
+    </main>
+    <aside>
+      <!-- lo revemos si ultilizamos card en la seccion about me -->
+      <div class="card card--aside">
+        <div class="card--about-me">
+          <h3 class="title">ABOUT ME</h3>
+          <img class="aside__image" src="imagenes/about me.jpg" alt="">
+          <h3 class="aside__name">Ana Ciorici</h3>
+          <p class="aside__text">Hi, I’m Ana and I love fashion, food, the yellow colour, but most of all life. I’m a
+            food
+            blogger living in Amsterdam, a wife and a mom to my two beautiful kids.</p>
+          <button class="btn btn--about-me">READ MORE</button>
+        </div>
+        <div class="follow-me">
+          <h3 class="title">FOLLOW ME</h3>
+          <P class="aside__text aside__text--italic">Customize Social Icons as you want (400+ icons available, change
+            color). <span class="bold"> View more examples</span></P>
+        </div>
+        <div class="aside__social">
+          <ul>
+            <li class="facebook"><i class="fab fa-facebook-f"></i></li>
+            <li class="twitter"><i class="fab fa-twitter"></i></li>
+            <li class="instagram"><i class="fab fa-instagram"></i></li>
+            <li class="pinterest"><i class="fab fa-pinterest-p"></i></li>
+            <li class="etsy"><i class="fab fa-etsy"></i></li>
+            <li class="youtube"><i class="fab fa-youtube"></i></li>
+            <li class="mail"><i class="far fa-envelope"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="aside__form">
+        <form action="">
+          <h3 class="title">SUBSCRIBE TO OUR NEWSLETTER</h3>
+          <p class="card__text">Subscribe to our newsletter and receive new recipes in your inbox.</p>
+          <label for="first-name"></label>
+          <input class="aside__input" type="text" id="first-name" placeholder="First name">
+          <label for="last-name"></label>
+          <input class="aside__input" type="text" id="last-name" placeholder="Last name">
+          <label for="email"></label>
+          <input class="aside__input" type="email" id="email" placeholder="Email">
+          <button class="btn btn--form">SUSCRIBE!</button>
+        </form>
+      </div>
+      <!--   <div class="aside__instagram">
+        <h3 class="title">INSTAGRAM</h3>
+        <div class="aside__instagram__top">
+            <img class="profile-pic" src="Imágenes/instagram-profile.jpg" alt="">
+            <p class="profile-name">WPZOOM Food</p>
+            <p class="profile-at">@wpzfoodpic</p>
+            <button class="btn btn--instagram">Follow</button>
+            <div class="profile-counter">
+                <div class="profile-counter--column">
+                    <p class="profile-counter--number">20</p>
+                    <p class="profile-counter--text">posts</p>
+                </div>
+                <div class="profile-counter--column">
+                    <p class="profile-counter--number">39</p>
+                    <p class="profile-counter--text">followers</p>
+                </div>
+                <div class="profile-counter--column">
+                    <p class="profile-counter--number">1</p>
+                    <p class="profile-counter--text">following</p>
+                </div>
+            </div>
+        </div>
+        <div class="aside__instagram__description">
+            <p class="aside__text">This is a demo account for food content. 🍝
+                Happy blogging! #wpzoom</p>
+        </div>
+        <div class="aside__instagram__pics">
+            <img class="pic" src="Imágenes/Berry Crumble with Fresh Berries.jpg" alt="">
+            <img class="pic" src="Imágenes/Cinnamon & Orange Cookies.jpg" alt="">
+            <img class="pic" src="Imágenes/Fried Eggs with Tomatoes.jpg" alt="">
+            <img class="pic" src="Imágenes/Ham Salad with Poached Egg.jpg" alt="">
+            <img class="pic" src="Imágenes/Pistachio Pavlova Cake.jpg" alt="">
+            <img class="pic" src="Imágenes/Rustic Pavlova Cake.jpg" alt="">
+            <img class="pic" src="Imágenes/Salad with Arugula & Cherry.jpg" alt="">
+            <img class="pic" src="Imágenes/Sample Post with Blocks.jpg" alt="">
+            <img class="pic" src="Imágenes/Sliced Bread Ciabatta and Oil.jpg" alt="">
+        </div>
+        <div class="aside__instagram__button">
+            <button class="btn btn--view">View on Instagram</button>
+        </div>
+    </div> -->
+    </aside>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footer__container">
+        <img src="imagenes/Pistachio Pavlova Cake.jpg" alt="" class="footer__container__img">
+        <img src="imagenes/Rustic Pavlova Cake.jpg" alt="" class="footer__container__img">
+        <img src="imagenes/Salad with Arugula & Cherry.jpg" alt="" class="footer__container__img">
+        <img src="imagenes/Sample Post with Blocks.jpg" alt="" class="footer__container__img">
+        <img src="imagenes/Sliced Bread Ciabatta and Oil.jpg" alt="" class="footer__container__img">
+        <img src="imagenes/view to the shop.jpg" alt="" class="footer__container__img">
+      </div>
+      <div class="footer__container__nav">
+        <nav class="navbar">
+          <div class="navbar__items">
+            <ul>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer">HOME</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer">ABOUT</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer">PRIVACY POLICY</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <small>COPYRIGHT 2020 FOODICA-DESIGNED BY <span>WPZOOM</span></small>
+  </footer>
+</body>
+
+</html>

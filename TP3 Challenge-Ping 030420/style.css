@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "libre franklin";
+    font-size: 20px;
+    width: 1440px;
+    text-align: center;
+    /* PARA centrar tambien podes poner text-aling:center; aca en conteiner */
+}
+h1, .negrita {
+    font-size: 50px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    padding-top: 50px;
+}
+.negrita {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+p {
+    color: hsl(209, 33%, 12%);
+    padding-top: 20px;
+}
+input {
+    border: 1px solid  hsl(0, 1%, 67%) ;
+    border-radius: 35px ;
+    padding: 15px;
+    width: 350px;
+    font-family: "libre franklin";
+}
+input::placeholder {
+    color:hsl(0, 1%, 67%) ;
+}
+input[type="submit"] {
+    width: 150px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px hsl(223, 100%, 88%);
+}
+form {
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+}
+.img-graficos {
+    width: 500px;
+    padding-bottom: 100px;
+}
+i {
+    border-radius: 50%;
+    border: 1px solid hsl(0, 5%, 87%);
+    color:hsl(223, 87%, 63%);
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    font-size: 16px;
+}
+

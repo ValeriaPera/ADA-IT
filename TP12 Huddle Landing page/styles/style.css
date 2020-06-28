@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.nav__logo__img {
+  width: 15rem;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-family: "Open Sans";
+  box-shadow: 1px 1px 5px #8f8f8f;
+}
+.btn--grey {
+  background-color: white;
+}
+.btn--pink {
+  background-color: #ff52bf;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+.hero__info {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00252e;
+}
+@media screen and (min-width: 600px) {
+  .hero__info {
+    width: 50%;
+  }
+}
+.hero__description {
+  margin: 3rem 0;
+  line-height: 3.3rem;
+}
+.hero__title {
+  font-size: 3rem;
+}
+
+.card {
+  width: 90%;
+  box-shadow: 1px 1px 5px #8f8f8f;
+  background-color: white;
+  border-radius: 1.5rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  border: none;
+}
+@media screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+}
+.card__img {
+  width: 80%;
+}
+@media screen and (min-width: 600px) {
+  .card__img {
+    width: 50%;
+  }
+}
+.card__info {
+  text-align: center;
+  padding: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .card__info {
+    text-align: start;
+    margin-left: 10rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card__info {
+    width: 50%;
+  }
+}
+.card__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00252e;
+}
+.card__description {
+  font-size: 1.5rem;
+  color: #7d8287;
+}
+@media screen and (min-width: 600px) {
+  .card__description {
+    font-size: 1.8rem;
+  }
+}
+.card--float {
+  width: 95%;
+  text-align: center;
+  margin-bottom: -5rem;
+}
+@media screen and (min-width: 600px) {
+  .card--float {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: white;
+  font-size: 1.8rem;
+}
+
+header {
+  background-color: #ebfbff;
+  background-image: url(../images/bg-hero-mobile.svg);
+  padding: 2rem 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #00252e;
+  color: white;
+  padding: 2rem;
+  padding-top: 10rem;
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.footer__contact-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 2rem;
+}
+.footer__contact-info--alingcenter {
+  align-items: center;
+}
+.footer__img__phone {
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+  align-items: center;
+}
+.footer__img__location {
+  align-self: flex-start;
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+}
+.footer__img__email {
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .footer__nav {
+    width: 25%;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer__social-media {
+    width: 50%;
+    padding-top: 2rem;
+  }
+}
+.footer__social-media__nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer__social-media__copyright {
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 600px) {
+  .footer__social-media__copyright {
+    margin: 10rem 0 0;
+  }
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .footer a {
+    padding: 1rem;
+  }
+}
+.footer i {
+  height: 42px;
+  width: 42px;
+  border: 0.1rem solid white;
+  border-radius: 50rem;
+  padding: 1rem 1rem;
+  margin: 0 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

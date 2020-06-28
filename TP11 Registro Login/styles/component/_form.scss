@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__label {
+    padding: 0.2rem 0;
+    font-weight: bold;
+  }
+  &__input {
+    display: block;
+    width: 90%;
+    padding: $sp0;
+    border-radius: 5px;
+    border: 1px solid $default-border-color;
+
+    &:hover {
+      border: 1px solid $hover-border-color;
+      outline: none;
+    }
+
+    &:focus {
+      border: 1px solid $focus-border-color;
+    }
+
+    &:invalid {
+      color: $invalid-border-color;
+      border: 1px solid $invalid-border-color;
+      outline: none;
+    }
+    // &:valid {
+    //   color: $valid-border-color;
+    //   border: 1px solid $valid-border-color;
+    //   outline: none;
+    // }
+
+    &::placeholder {
+      color: $default-border-color;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    padding: $sp1 0;
+    &__label {
+      margin-left: $sp0;
+    }
+  }
+  &__submit {
+    padding: $sp0 $sp1;
+    margin-top: $sp0;
+    background-color: $background-color-btn;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    &:hover {
+      background-color: $hover-background-color;
+    }
+  }
+}

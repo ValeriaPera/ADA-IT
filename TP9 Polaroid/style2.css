@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(img/bg.jpg);
+    font-family:'Cedarville Cursive', cursive;
+    ;
+}
+.gallery {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pic {
+    margin: 15px;
+    padding:20px 20px 35px 20px ;
+    background-color: ivory;
+    transition: 0.4s;
+}
+.pic img {
+    height: 215px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.figcaption {
+    text-align: center;
+}
+.pic1 {
+    transform: rotate(10deg);
+    z-index: 1;
+}
+.pic2 {
+    transform: rotate(35deg);
+    z-index: 2;
+}
+.pic3 {
+    transform: rotate(5deg);
+    z-index: 3;
+}
+.pic4 {
+    transform: rotate(-40deg);
+    z-index: 4;
+}
+.pic5 {
+    transform: rotate(-15deg);
+    z-index: 5;
+}
+.pic6 {
+    transform: rotate(10deg);
+    z-index: 6;
+}
+.pic7 {
+    transform: rotate(35deg);
+    z-index: 7;
+}
+.pic8 {
+    transform: rotate(5deg);
+    z-index: 8;
+}
+.pic9 {
+    transform: rotate(50deg);
+}
+.pic10 {
+    transform: rotate(10deg);
+    z-index: 10;
+}
+.pic1:hover {
+    filter:contrast(50%) ;
+    transform: scale(1.5);
+}
+.pic2:hover {
+    filter:blur(1px) ;
+    transform: scale(1.5);
+}
+.pic3:hover {
+    filter:brightness(2) ;
+    transform: scale(1.5);
+}
+.pic4:hover {
+    filter:grayscale(100%) ;
+    transform: scale(1.5);
+}
+.pic5:hover {
+    filter:invert(100%) ;
+    transform: scale(1.5);
+}
+.pic6:hover {
+    filter:opacity(50%) ;
+    transform: scale(1.5);
+}
+.pic7:hover {
+    filter:drop-shadow(16px 16px 20px pink) ;
+    transform: scale(1.5);
+}
+.pic8:hover {
+    filter:invert(60%) ;
+    transform: scale(1.5);
+}
+.pic9:hover {
+    filter:saturate(30%) ;
+    transform: scale(1.5);
+}
+.pic10:hover {
+    filter:sepia(70%) ;
+    transform: scale(1.5);
+}

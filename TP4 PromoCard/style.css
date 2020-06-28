@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#62BFE8;
+    display: flex;
+}
+.card {
+    width: 275px;
+    height:fit-content;
+    border: none;
+    margin: 75px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color:#FCFDFD;
+    font-family:sans-serif;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px 20px #774ee7;
+}
+.imagen {
+    height: 250px;
+}
+.foto {
+    height:250px;
+    object-fit: cover;
+    width: 275px;
+    border-radius: 20px 20px 0 0;
+}
+.popular {
+    background-color:#62BFE8 ;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #FCFDFD;
+    border-radius: 5px;
+    font-size: 10px;
+    position: relative;
+    top: -50px;
+    margin-left:20px;
+}
+.precio {
+    background-color: tomato;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color:#FCFDFD ;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    top: -250px;
+    margin-left:20px;
+}
+.letrachica {
+    font-size: 10px;
+}
+.info {
+    margin:15px 60px 0px 20px ;
+    color:#504d37 ;
+}
+h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 11px;
+    font-weight: 600;
+    color:#9d9388 ;
+}
+.sailingdates {
+    margin-top: 20px;
+}
+.fechas {
+    display: flex;
+    justify-content:flex-start;
+    margin-top:5px 70px 17px;
+}
+.date {
+    width: 35px;
+    height: 35px;
+    background-color: #d8d3d1;
+    color: #FCFDFD;
+    margin: 10px 5px 25px 0px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 10px;
+
+}
+.letramuychica {
+    font-size: 8px;
+}
+hr {
+    width: 235px;
+    color:#d8d3d1;
+}
+.iconos {
+    display: flex;
+    color:#d8d3d1;
+    font-size: 14px;
+    margin: 10px -30px 10px 0;
+    justify-content: space-between;
+}
+i {
+    margin-right: 10px;
+}
+
+

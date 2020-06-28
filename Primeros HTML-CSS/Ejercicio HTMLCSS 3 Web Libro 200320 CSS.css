@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(246, 240, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+h1 {
+    color: #9c4d4d;
+    font-size: 50px;
+}
+h2 {
+    color: rgb(173, 117, 117);
+    font-size: 24px;
+}
+.camposDatosLibro {
+    color: hsl(0, 0%, 0%);
+}
+.sustantivos {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.palabrasFondoNegro {
+    color: #0e0808;
+    background-color: rgb(173, 117, 117);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
