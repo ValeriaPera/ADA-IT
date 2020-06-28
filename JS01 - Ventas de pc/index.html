@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table for Database with Modal</title>
+    <script src="https://kit.fontawesome.com/512bb80baa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+  <button id="btnModal">Abrir modal</button>
+  <div id="modal" class="modalContainer fade">
+    <div class="modal-content" id="modalContent">
+      <span id="close" class="close">×</span>
+      <h2>Nueva venta</h2>
+      <p>
+        Seleccione segun corresponda
+      </p>
+      <select name="rte" id="vendedora">
+        <option value="Ada">Ada</option>
+        <option value="Grace">Grace</option>
+        <option value="Hedy">Hedy</option>
+        <option value="Sheryl">Sheryl</option>
+      </select>
+      <select name="rte" id="componentes" multiple>
+        <option value="Monitor GPRS 3000">Monitor GPRS 3000</option>
+        <option value="Motherboard ASUS 1500">Motherboard ASUS 1500</option>
+        <option value="Monitor ASC 543">Monitor ASC 543</option>
+        <option value="Motherboard ASUS 1200">Motherboard ASUS 1200</option>
+      </select>
+      <select name="rte" id="sucursal">
+        <option value="Caballito">Caballito</option>
+        <option value="Centro">Centro</option>
+      </select>
+
+      <button id="btnConfirm">aceptar</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="table-title">
+      <h1>Ventas</h1>
+      <button class="btn--sale"><i class="fas fa-plus-circle"></i> Nueva venta</button>
+    </div>
+    <table class="table">
+      <thead class="table-head">
+        <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Vendedora</th>
+            <th scope="col">Sucursal</th>
+            <th scope="col">Componentes</th>
+            <th scope="col">Precio</th>
+            <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody class="table--body">
+
+      </tbody>
+    </table>
+
+    <table class="table">
+      <div class="table-title">
+        <h1>Ventas por sucursal</h1>
+      </div>
+      <thead class="table-head">
+        <tr>
+          <th scope="col">Sucursal</th>
+          <th scope="col">Total Ventas</th>
+        </tr>
+      </thead>
+      <tbody class="table--body">
+
+      </tbody>
+    </table>
+    <div class="info">
+      <p>Producto estrella: <span class="mejor_producto"></span> </p>
+      <p>Vendedora que más ingresos generó: <span class="mejor_vendedora"></span> </p>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>

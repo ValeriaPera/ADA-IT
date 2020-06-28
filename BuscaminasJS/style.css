@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 3.5rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1, h2, span{
+    width: 100vw;
+    text-align: center;
+    color: rgba(53, 51, 51, 0.932);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+p {
+    width: 100%; 
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    text-align: center;
+    color: rgb(255, 99, 71);
+    margin-bottom: .5rem;
+}
+
+
+button {
+    padding: .7rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    background-color: rgb(255, 99, 71);
+    color: rgb(255, 255, 255);
+    font-family: 'Comfortaa', cursive;    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 81, 57);
+}
+
+.contenedor {
+    width: 30%;
+    background-color: rgba(245, 222, 179, 0.40);
+    box-shadow: 0 0 20px 1px rgba(124, 121, 121, 0.5);
+    border-radius: 2rem;
+    animation: shadow 1s infinite;
+}
+
+@keyframes shadow {
+    to {
+        box-shadow: 0 0 20px 1px rgba(238, 196, 104, 0.63);
+    }
+}
+
+.tablero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casilla {
+    padding: 1rem;
+}
+
+.github {
+    width: 3rem;
+    height: 4rem;
+    background-color: rgba(107, 105, 105, 0.239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    position: fixed;
+    top: -.6rem;
+    left: 1rem;
+  }
+  
+  .github:hover {
+    cursor: pointer;
+    background-color: rgba(107, 105, 105, 0.557);
+    box-shadow: 0 0 10px 1px rgb(209, 209, 209);
+  }
+  
+  .github>a>i {
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  .github>a:visited {
+    color: rgb(0, 0, 0);
+  }
+
+  @media screen and (max-width:680px) {
+    body {
+        font-size: 2rem;
+    }
+   
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+        
+    .contenedor {
+        width: 80%;
+    }
+
+  }
