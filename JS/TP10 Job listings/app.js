@@ -22,6 +22,50 @@ const filtrar = (item) => {
   }
 
 
+  // CHIARI
+  // const filterJobs = (item) => {
+  //   show = true
+
+  //   if (filters.indexOf(item) !== -1) {
+  //     filters.splice(filters.indexOf(item), 1)
+  //   } else {
+  //     filters.push(item)
+  //   }
+
+  //   if (filters.length === 0) {
+  //     show = false
+  //     jobList(jobs)
+  //   }
+
+  //   if (show) {
+  //     const tags = filters.map(i => {
+  //       return `<span class="card__tag">${i}</span>`
+  //     }).join("")
+
+  //     search.innerHTML = `${tags}`
+  //     search.classList.remove("hide")
+  //   } else {
+  //     search.innerHTML = ""
+  //     search.classList.add("hide")
+  //   }
+
+  //   let jobsFiltered = jobs.filter((job) => {
+  //     return filters.every(filtro => {
+  //       return [
+  //         job.role,
+  //         job.level,
+  //         ...(job.languages || []),
+  //         ...(job.tools || []),
+  //       ].includes(filtro)
+  //     })
+  //   })
+
+
+  //   jobList(jobsFiltered)
+  // }
+
+
+
   const trabajos = jobListing.filter((trabajo) => {
     return filtros.every(filtro => {
       return [
@@ -97,6 +141,12 @@ const isFeatured = (job) => {
 ofertasDeTrabajo(jobListing)
 
 
+// BELU
+// close.addEventListener("click", function () {
+//   modalContent.classList.remove("active");
+//   ofertasTrabajo(trabajos);
+//   displayTag.innerHTML = "";
 
+// });
 
 
