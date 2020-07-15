@@ -12,7 +12,7 @@
 
 <body>
   <section class="section">
-    <h1 class="title">Buscador de gatitos</h1>
+    <h1 class="title">Buscador de gatites</h1>
     <!--
         ===================================
         TABS
@@ -20,11 +20,11 @@
       -->
     <div class="container tab-container">
       <div class="tabs is-centered">
-        <ul>
-          <li class="is-active"><a href="#random">Random</a></li>
-          <li><a href="#breeds">Razas</a></li>
+        <ul id="list-container">
+          <li class="is-active"><a href="#random" id="tagRandom">Random</a></li>
+          <li><a href="#breeds" id="tagRazas">Razas</a></li>
           <li><a href="#breeds-search">Buscador de razas</a></li>
-          <li><a href="#breed-filters">Buscador con filtros</a></li>
+          <li><a href="#breed-filters" id="tagBreedFilters">Buscador con filtros</a></li>
         </ul>
       </div>
     </div>
@@ -37,8 +37,8 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="box">
-            <figure class="image">
-              <img src="https://cdn2.thecatapi.com/images/bhm.jpg" id="cat-img" onload="stopIsLoading()" />
+            <figure id="imgRandom" class="image">
+              <img src="https://bulma.io/images/placeholders/256x256.png" id="cat-img" />
             </figure>
           </div>
         </div>
@@ -46,7 +46,7 @@
       <div class="columns is-centered">
         <div class="column is-4">
           <a class="button is-primary is-medium is-fullwidth" id="random-cat-btn">
-            Otro gatito!
+            Otre gatite!
           </a>
         </div>
       </div>
@@ -58,9 +58,8 @@
       -->
     <div class="container tab-section is-hidden" id="breeds">
       <div class="select mb-2">
-        <select id="breed-dropdown" onchange='updateCardImg(); updateCardInfo()'>
-          <option>Select dropdown</option>
-          <option>With options</option>
+        <select id="breed-dropdown">
+
         </select>
       </div>
       <!--
@@ -68,16 +67,24 @@
           Card raza
         ===================================
         -->
-      <div class="card">
+      <div class="card" id="breed-card">
         <div class="columns is-gapless">
           <div class="column">
-            <figure class="image" id="fig-img">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id="breed-img" />
+            <figure class="image">
+              <img src="" alt="Placeholder image" id="breed-img" />
             </figure>
           </div>
           <div class="column">
-            <div class="content p-1" id="card-body">
+            <div class="content p-1">
+              <h1 id="breed-name>Persa</h1>
+                <p id=" breed-description">
 
+                </p>
+                <div class="tags" id="breed-temperament">
+                  <span class=" tag">Alegre</span>
+                  <span class="tag">Energético</span>
+                  <span class="tag">Curioso</span>
+                </div>
             </div>
           </div>
         </div>
@@ -89,16 +96,16 @@
         ===================================
       -->
     <div class="container tab-section is-hidden" id="breeds-search">
-      <div class="columns">
+      <form id="breed-search-form" class="columns">
         <div class="column is-10">
           <input class="input is-small" type="text" placeholder="Búsqueda" id="breed-search-input" />
         </div>
         <div class="column is-2">
-          <button class="button is-primary is-small is-fullwidth" id="breed-search-btn">
+          <button type="submit" class="button is-primary is-small is-fullwidth" id="breed-search-btn">
             Buscar
           </button>
         </div>
-      </div>
+      </form>
       <!--
         ===================================
         Resultado búsquedas
@@ -119,7 +126,7 @@
     <div class="container tab-section is-hidden" id="breed-filters">
       <div class="columns">
         <div class="column is-4">
-          <div class="filter_content">
+          <div class="content" id="filterContainer">
             <h3>Filtros</h3>
             <label class="checkbox">
               <input type="checkbox" class="breed-filter" id="hairless">
@@ -159,11 +166,22 @@
           <div class="content mb-2">
             <p id="breed-results-count">10 resultados</p>
           </div>
-          <div class="columns" id="breed-results">
+          <div class="columns is-multiline" id="breed-results">
             <!-- 
                 **** Template a copiar ****
                -->
-
+            <div class="column is-6" id="breedFilterCards">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-5">Raza</p>
+                </div>
+              </div>
+            </div>
             <!-- 
                 **** Fin template ****
                -->
