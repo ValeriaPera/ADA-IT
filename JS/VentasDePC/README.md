@@ -9,7 +9,7 @@ Una empresa de venta de computadoras está desarrollando un sistema para llevar 
 - Lista de las vendedoras de la empresa
 - Lista de ventas. Un array con objetos. Cada objeto representa una venta y tiene las propiedades `fecha`, `nombreVendedora` (un String con el nombre), `componentes` (un array Strings con el nombre de cada componente vendido), `sucursal` (un String con el nombre de la sucursal) y `id` (un valor que identifica de forma única a cada venta).
 - Lista de precios de los componentes, de la forma (nombre componente, precio).
-- Se debe visualizar el listado de ventas como indica el mockup. Cada venta debe contar con un botón 'eliminar'.
+- Se debe visualizar el listado de ventas como indica el mockup. Cada vente debe contar con un botón 'eliminar'.
 
 ```js
 const local = {
@@ -29,28 +29,28 @@ const local = {
       fecha: new Date(2019, 0, 1),
       nombreVendedora: "Ada",
       sucursal: "Centro",
-      componentes: ["Monitor GPRS 3000", "Motherboard ASUS 1500"],  //200 120
+      componentes: ["Monitor GPRS 3000", "Motherboard ASUS 1500"],
     },
     {
       id: 3,
       fecha: new Date(2019, 0, 2),
       nombreVendedora: "Grace",
       sucursal: "Caballito",
-      componentes: ["Monitor ASC 543", "Motherboard MZI"],//250 30
+      componentes: ["Monitor ASC 543", "Motherboard MZI"],
     },
     {
       id: 4,
       fecha: new Date(2019, 0, 10),
       nombreVendedora: "Ada",
       sucursal: "Centro",
-      componentes: ["Monitor ASC 543", "Motherboard ASUS 1200"], //250 100
+      componentes: ["Monitor ASC 543", "Motherboard ASUS 1200"],
     },
     {
       id: 5,
       fecha: new Date(2019, 0, 12),
       nombreVendedora: "Grace",
       sucursal: "Caballito",
-      componentes: ["Monitor GPRS 3000", "Motherboard ASUS 1200"], //200 100
+      componentes: ["Monitor GPRS 3000", "Motherboard ASUS 1200"],
     },
   ],
 
