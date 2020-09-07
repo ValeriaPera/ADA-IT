@@ -237,25 +237,27 @@ function enhanceBreedWithImage(breed) {
 
 function BreedCard(props) {
   return (
-    `<div class="columns is-gapless">
-          <div class="column">
-            <figure class="image">
-              <img src="${props.breed.image}" alt="Placeholder image" id="breed-img" />
-            </figure>
-          </div>
-          <div class="column">
-            <div class="content p-1">
-              <h1 id="breed-name">${props.breed.name}</h1>
-                <p id=" breed-description">
-                ${props.breed.description}
-                </p>
-                <div class="tags" id="breed-temperament">
-                  ${stringToSpan(props.breed.temperament)}
-                </div>
-            </div>
+    `<div class="columns is-gapless breed-card">
+      
+      <div class="column">
+        <figure class="image">
+          <img src="${props.breed.image}" alt="Placeholder image" id="breed-img" />
+        </figure>
+      </div>
+
+      <div class="column breed-card-text-container">        
+        <div class="content p-1 breed-card-text">
+          <h1 id="breed-name">${props.breed.name}</h1>
+          <p id=" breed-description">
+            ${props.breed.description}
+          </p>
+          <div class="tags" id="breed-temperament">
+            ${stringToSpan(props.breed.temperament)}
           </div>
         </div>
-      </div>`
+      </div>
+
+    </div>`
 
   )
 }
@@ -314,14 +316,14 @@ const createFilterCards = (arrayBreeds) => {
   return arrayBreeds.reduce((accum, breed) => {
     return accum + `
               <div class="column is-4">
-    <div class="card">
+    <div class="card filter-card">
       <div class="card-image">
         <figure class="image is-4by3">
           <img src="${breed.image}" />
         </figure>
       </div>
       <div class="card-content">
-        <p class="title is-5">${breed.name}</p>
+        <p class="title is-5 filter-card-title">${breed.name}</p>
       </div>
     </div>
   </div>`

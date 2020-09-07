@@ -1,7 +1,170 @@
-.title {
-  text-align: center;
+:root{
+  --primaryColor:black;
+  --secondaryColor:rgb(100, 76, 117);
+  --primaryFontColor:white;
+  --fontFamily:'Kufam', cursive;
 }
 
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily)
+}
+
+header {
+  padding: 2rem 2rem 0.5rem;
+  background-color:var(--primaryColor);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  display: inline-block;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color:var(--secondaryColor);
+  font-size: 2.5rem;
+  color: var(--primaryFontColor);
+}
+
+.fa-paw {
+  font-size: 3rem;
+}
+
+.tabs a{
+text-align: center;
+margin: 1rem 0.5rem;
+color: white;
+border-bottom: 1px solid var(--secondaryColor);
+}
+
+
+#list-container {
+  border-bottom:none ;
+}
+
+
+
+#list-container li.is-active a {
+  background-color:var(--secondaryColor);
+  color:var(--primaryFontColor);
+  border-radius: 0.5rem;  
+  border: none;
+}
+
+.box {
+  height: 500px;
+}
+.random-cat-container {
+  background-color: var(--primaryColor);
+}
+
+#random-cat-btn {
+  background-color:var(--secondaryColor) ;
+}
+
+#breed-dropdown {
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryFontColor);
+  background-color: var(--secondaryColor);
+}
+.breed-card-container::after {
+  border-color:var(--primaryColor);
+}
+.breed-card {
+  background-color: var(--primaryColor);
+  border-radius: 1rem;
+  border: 1px solid var(--primaryColor);
+}
+#breed-img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.breed-card-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.breed-card-text {
+  color: var(--primaryFontColor);
+}
+#breed-name {
+  color: var(--primaryFontColor);
+  border-bottom: 1px solid var(--secondaryColor);
+  ;
+}
+#breed-temperament {
+  display: flex;
+  justify-content: center;
+}
+#breed-temperament .tag  {
+  background-color: var(--secondaryColor);
+  color: var(--primaryFontColor);
+}
+#breed-search-form {
+  display: flex;
+  align-items: center;
+}
+#breed-search-input{
+border: 2px solid var(--primaryColor);  
+background-color: var(--secondaryColor);
+padding: 1.2rem;
+}
+#breed-search-results a {
+  text-decoration:none;
+  color: var(--primaryColor);
+}
+
+#breed-search-input::placeholder, #breed-search-input {
+  color: var(--primaryFontColor);
+  font-size: 1rem;
+  font-family: var(--fontFamily);
+}
+#breed-search-btn {
+  background-color: var(--primaryColor);
+  font-family: var(--fontFamily);
+  border: 2px solid var(--primaryColor);
+  font-size: 1rem;
+
+
+
+}
+
+.filterContainer {
+text-align: center;
+}
+
+.checkbox-filter {
+background-color: var(--secondaryColor);
+color: var(--primaryFontColor);
+padding: 0.5rem;
+margin-bottom: 1rem;
+border-radius: 5px;
+display:block;
+width: 200px;
+}
+
+.filter-card {
+  background-color: var(--primaryColor);
+  text-align: center;
+  border-radius: 1rem;
+}
+.filter-card-title {
+  color: var(--primaryFontColor);
+  text-decoration:underline var(--secondaryColor);
+  
+}
+
+
+
+/* 
+GENERAL MOD.
+*/
 .is-flex-centered {
   justify-content: center;
 }
@@ -39,13 +202,6 @@
   padding: 1.25em;
 }
 
-.title {
-  text-align: center;
-}
-
-.tab-container {
-  margin-bottom: 30px;
-}
 
 .dropdown-content {
   overflow: auto;
