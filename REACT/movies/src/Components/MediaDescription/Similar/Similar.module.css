@@ -1,0 +1,21 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 9rem;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+}
+
+@media (max-width: 600px){
+    .cardsContainer{
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 4rem;
+    }
+}

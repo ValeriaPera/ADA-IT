@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    background-color: rgb(54, 57, 63);
+    margin-top: 2.5rem;
+}
+
+
+.title {
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: .5rem;
+    margin: 2rem 0 1rem 0;
+    color: rgb(220, 221, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: rgb(33, 150, 243);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 600px){
+    .container{
+        align-items: center;
+        justify-content: center;
+
+    }
+    .title{
+        font-size: 1.5rem;
+        margin: .5rem 0;
+        align-self: flex-start;
+    }
+    .titleContainer{
+        display: flex;
+        align-items: center;
+    }
+    
+}

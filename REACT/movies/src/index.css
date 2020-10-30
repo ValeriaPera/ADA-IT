@@ -1,0 +1,12 @@
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgb(35, 39, 42);
+  color: rgb(220, 221, 222);
+  font-weight: 300;
+  margin: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

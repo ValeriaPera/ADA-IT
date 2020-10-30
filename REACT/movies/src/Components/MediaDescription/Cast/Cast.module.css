@@ -1,0 +1,14 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 9rem;
+}
+
+@media (max-width: 600px){
+    .cardsContainer {
+        margin: 0;
+        justify-content: center;
+    }
+}

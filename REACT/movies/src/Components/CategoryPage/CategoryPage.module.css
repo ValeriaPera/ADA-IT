@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    background-color: rgb(54, 57, 63);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.cardsContainer {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 10rem;
+    color: rgb(220, 221, 222);
+    font-weight: 300;
+    align-self: flex-start;
+}
+
+@media (max-width: 600px){
+
+    .title{
+        font-size: 1.5rem;
+        margin: auto;
+        align-self: flex-start;
+        padding: 1.5rem 0;
+    }
+}

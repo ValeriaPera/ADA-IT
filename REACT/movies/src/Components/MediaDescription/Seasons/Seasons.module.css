@@ -1,0 +1,48 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1rem 9rem;
+}
+
+.selectContainer{
+    position: relative;
+    margin: 0 10rem;
+    width: 150px;
+    
+}
+.selectContainer::after {    
+    content: "";    
+    position: absolute;    
+    display: block;    
+    width: 7px;    
+    height: 7px;    
+    top: 50%;    
+    right: 14px;    
+    transform: translateY(-50%) rotateZ(-135deg);    
+    border-top: 2px solid rgb(220, 221, 222);    
+    border-left: 2px solid rgb(220, 221, 222);    
+    box-sizing: border-box;  
+}
+.select {
+    width: 100%;
+    -webkit-appearance: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(220, 221, 222);
+    background-color: rgb(35, 39, 42);
+    cursor: pointer;
+    position: relative;
+    border-radius: .5rem;
+    border-width: 1px solid rgb(220, 221, 222);
+}
+@media (max-width: 600px){
+    .cardsContainer {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

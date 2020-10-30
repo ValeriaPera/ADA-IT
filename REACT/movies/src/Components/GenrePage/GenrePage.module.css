@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    background-color: rgb(54, 57, 63);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.cardsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    margin: 2rem 0 1rem 0;
+    color: rgb(220, 221, 222);
+    font-weight: 300;
+}
+@media (max-width: 600px){
+    .container {
+        align-items: center;
+
+    }
+    .cardsContainer {
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,9 @@
+.container {
+    font-size: 1.2rem;
+    color: rgb(33, 150, 243);
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    padding: 2.5rem 0 2rem 0;
+    align-self: center;
+}

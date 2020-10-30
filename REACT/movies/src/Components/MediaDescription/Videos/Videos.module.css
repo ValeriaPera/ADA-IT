@@ -1,0 +1,24 @@
+.videoContainer{
+    margin: 1rem 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 660px;
+    height: 360px;
+    margin: 1rem;
+    border: none;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+}
+@media (max-width: 600px){
+    .videoContainer{
+        margin: 0;
+    }
+}

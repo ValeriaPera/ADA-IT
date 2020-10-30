@@ -1,0 +1,43 @@
+.figure {
+    width: 30%;
+    margin-bottom: 1.5rem;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.number {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(33, 150, 243);
+}
+
+.title {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.overview {
+    width: 100%;
+    margin: 1.5rem 0 3rem 0;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+@media (max-width: 600px){
+    .figure{
+        margin: 1.5rem;
+        width: auto;
+    }
+    .img{
+        height: 200px;
+        margin-bottom: 1rem;
+        object-fit: cover;
+    }
+    .overview{
+        margin: 1rem 0 0rem 0;
+    }
+}
