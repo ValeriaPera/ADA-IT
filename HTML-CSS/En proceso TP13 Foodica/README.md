@@ -1,2 +1,0 @@
-# WPZomm-Foodica
-Pendiente

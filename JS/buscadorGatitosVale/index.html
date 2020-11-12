@@ -4,12 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buscador de gatitos</title>
+  <title>Cats</title>
   <!--  -->
+
   <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+
+
   <script src="https://kit.fontawesome.com/280c36fc72.js" crossorigin="anonymous"></script>
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" />
-  
+
+
   <link rel="stylesheet" href="style.css" />
 
   <!--  -->
@@ -18,30 +27,38 @@
 <body>
   <section class="pageContainer">
     <header>
-      <h1 class="title main-title">Gatitos <i class="fas fa-paw"></i></h1>
-      <!-- <img src="images/real-cat-paw.png" alt=""> -->
+      <small class="mention">ClaudiaWollesen en Pixabay</small>
+      <h1 class="title main-title">Cats
+      </h1>
 
-      <div class="container tab-container">
+      <div class="container">
         <div class="tabs is-centered">
           <ul id="list-container">
             <li class="is-active"><a href="#random" id="tagRandom">Random</a></li>
-            <li><a href="#breeds" id="tagRazas">Razas</a></li>
-            <li><a href="#breeds-search">Buscador de razas</a></li>
-            <li><a href="#breed-filters" id="tagBreedFilters">Buscador con filtros</a></li>
+            <li><a href="#breeds" id="tagRazas">Breeds</a></li>
+            <li><a href="#breeds-search">Breeds Search</a></li>
+            <li><a href="#breed-filters" id="tagBreedFilters">Breeds Filter</a></li>
           </ul>
         </div>
       </div>
     </header>
-    
-   
+
+
     <!--
         ===================================
         GATITO ALEATORIO
         ===================================
       -->
-    <div class="container tab-section" id="random">
-      <div class="columns is-centered">
-        <div class="column is-8 ">
+    <div class="container tab-section random-container" id="random">
+      <div class="columns">
+        <div class="column is-4">
+          <a class="button is-primary is-medium is-fullwidth" id="random-cat-btn">
+            Otro gatito!
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="column ">
           <div class="box random-cat-container">
             <figure id="imgRandom" class="image">
               <img src="https://bulma.io/images/placeholders/256x256.png" id="cat-img" />
@@ -49,27 +66,21 @@
           </div>
         </div>
       </div>
-      <div class="columns is-centered">
-        <div class="column is-4">
-          <a class="button is-primary is-medium is-fullwidth" id="random-cat-btn">
-            Otro gatito!
-          </a>
-        </div>
-      </div>
+
     </div>
-   
-        <!--
+
+    <!--
                 ===================================
                 RAZAS
                 ===================================
               -->
     <div class="container tab-section is-hidden" id="breeds">
-      <div class="select mb-2 breed-card-container">
+      <div class="select breed-card-container">
         <select id="breed-dropdown">
 
         </select>
       </div>
-     
+
       <div class="card" id="breed-card">
         <div class="columns is-gapless">
           <div class="column">
@@ -78,7 +89,7 @@
             </figure>
           </div>
           <div class="column">
-            <div class="content p-1">
+            <div class="content">
               <h1 id="breed-name>Persa</h1>
                 <p id=" breed-description">
 
@@ -94,24 +105,24 @@
       </div>
     </div>
 
-        <!--
+    <!--
                 ===================================
                 BUSCADOR DE RAZAS
                 ===================================
               -->
-   
+
     <div class="container tab-section is-hidden" id="breeds-search">
-      <form id="breed-search-form" class="columns">
+      <form id="breed-search-form">
         <div class="column is-10">
           <input class="input is-small" type="text" placeholder="Buscar raza" id="breed-search-input" />
         </div>
-        <div class="column is-2">
-          <button type="submit" class="button is-primary is-small is-fullwidth" id="breed-search-btn">
+        <div>
+          <button type="submit" class="button is-primary is-small <!-- is-fullwidth -->" id="breed-search-btn">
             Buscar
           </button>
         </div>
       </form>
-     
+
       <table class="table is-striped is-fullwidth">
         <tbody id="breed-search-results">
 
@@ -123,7 +134,7 @@
             FILTRO RAZAS
             ===================================
           -->
-    
+
     <div class="container tab-section is-hidden" id="breed-filters">
       <div class="columns">
         <div class="column is-4">
@@ -164,11 +175,11 @@
           </div>
         </div>
         <div class="column is-8">
-          <div class="content mb-2">
+          <div class="content">
             <p id="breed-results-count"></p>
           </div>
           <div class="columns is-multiline" id="breed-results">
-                     
+
           </div>
         </div>
       </div>
