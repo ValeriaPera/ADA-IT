@@ -162,6 +162,7 @@ BREEDS
 #breed-temperament .tag  {
   background-color: var(--secondaryColor);
   color: var(--primaryFontColor);
+  border: 1px solid white;
 }
 
 
